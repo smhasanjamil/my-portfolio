@@ -8,8 +8,37 @@
 .header {
     background-image: url('../images/banner/banner3.png');
     background-repeat: no-repeat;
+    width: 1600px;
 }
 
+/* nav styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    max-width: 1072px;
+    margin: 0 auto;
+}
+
+.nav-title {
+    font-weight: 800;
+    font-size: 45px;
+    color: #f3f3f3;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    margin-left: 51px;
+    color: #fefefe;
+    font-size: 24px;
+}
+
+/* banner styles */
 .banner {
     position: relative;
     height: 808px;
@@ -18,10 +47,9 @@
 
 .banner-item {
     position: absolute;
-    /* border: 5px solid yellow; */
     height: 100px;
     right: 0px;
-    top: 216px;
+    top: 120px;
     width: 525px;
     text-align: right;
     margin-right: 230px;
@@ -67,7 +95,6 @@ main {
     margin-top: 130px;
     align-items: center;
     gap: 87px;
-
 }
 
 .my-failures img {
@@ -104,6 +131,51 @@ main {
     margin-bottom: 16px;
 }
 
+/* About me design */
+.about {
+    border-radius: 10px;
+    text-align: center;
+    max-width: 1140px;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+
+.section-title {
+    margin-bottom: 30px;
+    font-weight: 700;
+font-size: 40px;
+    text-align: center;
+    color: #151414;
+    margin-bottom: 50px;
+}
+
+.section-description {
+    color: #757575;
+    font-weight: 500;
+font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.about-info-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.info-title{
+    font-weight: 700;
+font-size: 30px;
+    color: #474747;
+    margin-bottom: 16px;
+}
+
+.info-description{
+    font-size: 20px;
+    font-weight: 700;
+    color: #757575;
+}
+
 /* My Plans Section styles */
 
 .my-plan {
@@ -111,7 +183,6 @@ main {
     margin: 0 auto;
     margin-top: 130px;
     margin-bottom: 130px;
-
 }
 
 .my-plan-title {
@@ -153,7 +224,6 @@ main {
 /* second banner style */
 .second-banner {
     margin-bottom: 130px;
-
 }
 
 .second-banner-container {
@@ -185,55 +255,55 @@ main {
     display: flex;
 }
 
-.footer-info{
+.footer-info {
     padding: 130px 230px;
 }
 
-.footer-title{
+.footer-title {
     font-weight: 700;
-font-size: 45px;
-margin-bottom: 16px;
+    font-size: 45px;
+    margin-bottom: 16px;
 }
 
-.footer-description{
+.footer-description {
     font-weight: 400;
-font-size: 16px;
-color: #FFFFFF;
-margin-bottom: 24px;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
 }
 
-.footer-contact{
+.footer-contact {
     font-weight: 400;
-font-size: 16px;
-color: #ffffff;
-margin-bottom: 16px;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 16px;
 }
 
-.footer-social{
+.footer-social {
     display: flex;
     gap: 18px;
 }
 
-
-.subscription{
+.subscription {
     margin: 130px 230px;
     width: 325px;
-height: 204px;
+    height: 204px;
 }
 
-.subscription-title{
+.subscription-title {
     font-weight: 600;
-font-size: 25px;
-margin-bottom: 31px;
+    font-size: 25px;
+    margin-bottom: 31px;
 }
 
-.subscription-input{
+.subscription-input {
     background: #151414;
-   color: #f3f3f3;
-   margin-bottom: 16px;
+    color: #f3f3f3;
+    margin-bottom: 16px;
 }
 
-input[type=text], select{
+input[type=text],
+select {
     width: 325px;
     padding: 12px 5px;
     display: inline-block;
@@ -242,7 +312,7 @@ input[type=text], select{
     box-sizing: border-box;
 }
 
-.footer-btn{
+.footer-btn {
     height: 64px;
     border-radius: 5px;
     border: 0;
