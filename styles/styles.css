@@ -41,7 +41,7 @@
     margin-bottom: 32px;
 }
 
-.banner-btn {
+.primary-btn {
     height: 64px;
     border-radius: 5px;
     border: 0;
@@ -67,7 +67,7 @@ main {
     margin-top: 130px;
     align-items: center;
     gap: 87px;
-    
+
 }
 
 .my-failures img {
@@ -106,12 +106,12 @@ main {
 
 /* My Plans Section styles */
 
-.my-plan{
+.my-plan {
     max-width: 1141px;
     margin: 0 auto;
     margin-top: 130px;
     margin-bottom: 130px;
-    
+
 }
 
 .my-plan-title {
@@ -130,9 +130,9 @@ main {
 
 .my-plan-items img {
     display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
 }
 
 .plan-item-title {
@@ -143,9 +143,35 @@ main {
     text-align: center;
 }
 
-.plan-item-description{
+.plan-item-description {
     font-weight: 500;
-font-size: 25px;
-text-align: center;
-margin-top: 16px;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 16px;
+}
+
+/* second banner style */
+.second-banner {
+    margin-bottom: 130px;
+
+}
+
+.second-banner-container {
+    max-width: 1140px;
+    background-image: url(../images/watch.png), url(../images/gradient1.png);
+    background-blend-mode: overlay;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.second-banner-title {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 40px;
+    width: 560px;
+    padding: 60px 0px 24px 65px;
+}
+
+.second-banner-btn{
+    margin-left: 65px;
 }
