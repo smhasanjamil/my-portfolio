@@ -39,36 +39,6 @@ nav li {
 }
 
 /* banner styles */
-.banner {
-    position: relative;
-    height: 808px;
-    width: 1600px;
-}
-
-.banner-item {
-    position: absolute;
-    height: 100px;
-    right: 0px;
-    top: 120px;
-    width: 525px;
-    text-align: right;
-    margin-right: 230px;
-}
-
-.banner-item .banner-title {
-    font-weight: 700;
-    font-size: 65px;
-    color: #FFFFFF;
-    margin-bottom: 24px;
-}
-
-.banner-description {
-    font-weight: 400;
-    font-size: 16px;
-    color: #FFFFFF;
-    margin-bottom: 32px;
-}
-
 .primary-btn {
     height: 64px;
     border-radius: 5px;
@@ -78,6 +48,39 @@ nav li {
     font-weight: 600;
     font-size: 20px;
     padding: 20px 25px;
+}
+
+.banner-container {
+    margin-right: 230px;
+
+    display: flex;
+    height: 808px;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.banner-item {
+    width: 525px;
+    text-align: right;
+}
+
+.banner-title {
+    font-weight: 700;
+    font-size: 65px;
+    color: #ffffff;
+    margin-bottom: 24px;
+}
+
+.banner-description {
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 32px;
+}
+
+.header-btn {
+    margin-bottom: 130px;
 }
 
 /* Main section style */
@@ -145,7 +148,7 @@ main {
 .section-title {
     margin-bottom: 30px;
     font-weight: 700;
-font-size: 40px;
+    font-size: 40px;
     text-align: center;
     color: #151414;
     margin-bottom: 50px;
@@ -154,23 +157,23 @@ font-size: 40px;
 .section-description {
     color: #757575;
     font-weight: 500;
-font-size: 25px;
+    font-size: 25px;
     margin-bottom: 30px;
 }
 
-.about-info-container{
+.about-info-container {
     display: flex;
     justify-content: space-around;
 }
 
-.info-title{
+.info-title {
     font-weight: 700;
-font-size: 30px;
+    font-size: 30px;
     color: #474747;
     margin-bottom: 16px;
 }
 
-.info-description{
+.info-description {
     font-size: 20px;
     font-weight: 700;
     color: #757575;
