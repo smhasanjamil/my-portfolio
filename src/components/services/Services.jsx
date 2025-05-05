@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './Services.css';
+import ScrollReveal from '../../animation/ScrollReveal';
 
 const Services = () => {
 
@@ -10,6 +11,7 @@ const Services = () => {
     }
 
     return (
+        <ScrollReveal>
         <section className="services section" id="services">
             <h2 className="section__title">Services</h2>
             <span className="section__subtitle">What I offer</span>
@@ -146,6 +148,7 @@ const Services = () => {
 
             </div>
         </section>
+        </ScrollReveal>
     );
 };
 

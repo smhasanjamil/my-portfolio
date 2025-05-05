@@ -2,9 +2,11 @@ import './About.css';
 import AboutImg from '../../assets/about.jpg';
 import Resume from '../../assets/S_M_HASAN_JAMIL_Resume.pdf';
 import Info from './Info';
+import ScrollReveal from '../../animation/ScrollReveal';
 
 const About = () => {
     return (
+        <ScrollReveal>
         <section className="about section" id="about">
             <h2 className="section__title">About</h2>
             <span className="section__subtitle">My Introduction</span>
@@ -49,6 +51,7 @@ const About = () => {
             </div>
 
         </section>
+        </ScrollReveal>
     );
 };
 

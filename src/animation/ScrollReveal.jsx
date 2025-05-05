@@ -1,15 +1,18 @@
-import { motion, useAnimation, useInView } from "motion/react";
-import { useEffect } from "react";
+import { motion, useInView, useAnimation } from "motion/react";
+import { useEffect, useRef } from "react";
 
 const ScrollReveal = ({ children }) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { amount: 0.25 });
   const controls = useAnimation();
-  const [ref, inView] = useInView({ triggerOnce: true });
 
   useEffect(() => {
-    if (inView) {
+    if (isInView) {
       controls.start("visible");
+    } else {
+      controls.start("hidden");
     }
-  }, [controls, inView]);
+  }, [isInView, controls]);
 
   const variants = {
     hidden: { opacity: 0, y: 40 },
@@ -19,6 +22,7 @@ const ScrollReveal = ({ children }) => {
       transition: { duration: 0.6, delay: 0.2 },
     },
   };
+
   return (
     <motion.div
       ref={ref}
