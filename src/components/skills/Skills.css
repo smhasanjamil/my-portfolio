@@ -50,6 +50,23 @@
     font-size: var(--tiny-font-size);
 }
 
+.rotate {
+    color: #007bff !important;
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
 /* =============== BREAKPOINTS =============== */
 /* For large devices */
 @media screen and (max-width: 992px) {
